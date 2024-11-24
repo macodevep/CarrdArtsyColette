@@ -67,7 +67,6 @@ header img{
     .social-media li {
         margin: 10px; 
     }
-
     .social-media a:hover {
         transform: scale(1.1);
     }
@@ -110,22 +109,17 @@ header img{
         display: block;
         margin-right: auto;
         width: 70px;
-        
-        
     }
 
     .navbar {
         flex-direction: column;
     }
-    .art-styles {
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      .art-styles li {
+    .art-styles li {
         width: 100%;
         text-align: center;
-      }
+        display: flex;
+        flex-direction: column;
+    }
 }
 main {
   flex: 1; 
@@ -173,7 +167,6 @@ main {
     text-align: center;
     padding: 0px;
     box-sizing: border-box;
-    
 }
 .art-styles li a {
     display: inline-block;
@@ -206,8 +199,19 @@ main {
 
 
 .home img{
-    width: 180px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 40%;
+}
+
+@media (max-width: 768px){
+    .home img{
+        width: 60%;
+    }
+}
+@media (max-width: 450px){
+    .home img{
+        max-width: 400px;
+        width: auto;
+    }
 }
 
 .gallery {
