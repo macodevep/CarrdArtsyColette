@@ -55,7 +55,7 @@ header img{
     color: #fff;
     margin-top: -3px;
 }
-@media (min-width: 769px) {
+@media (min-width: 459px) and (max-width: 768px) {
     .navbar {
         padding: 10px;   
     }
@@ -76,7 +76,7 @@ header img{
     padding: 10px;
     z-index: 1000;
 }
-@media (max-width: 768px) {
+@media (min-width: 459px) and (max-width: 768px) {
     .social-media {
         display: none;
         flex-direction: column;
