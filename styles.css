@@ -76,7 +76,9 @@ header img{
     padding: 10px;
     z-index: 1000;
 }
-@media (min-width: 459px) and (max-width: 768px) {
+
+/* (min-width: 459px) and  */
+@media (max-width: 768px) { 
     .social-media {
         display: none;
         flex-direction: column;
