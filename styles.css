@@ -55,7 +55,7 @@ header img{
     color: #fff;
     margin-top: -3px;
 }
-@media (min-width: 459px) and (max-width: 768px) {
+@media (max-width: 480px) {
     .navbar {
         padding: 10px;   
     }
@@ -68,6 +68,10 @@ header img{
     .menu-toggle {
         display: none;
     }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
 }   
 .menu-toggle {
     display: none;
@@ -77,11 +81,9 @@ header img{
     z-index: 1000;
 }
 
-/* (min-width: 459px) and  */
 @media (max-width: 768px) { 
     .social-media {
         display: none;
-        flex-direction: column;
         width: 100%;
     }
     .social-media.show {
@@ -106,11 +108,16 @@ header img{
     .navbar {
         flex-direction: column;
     }
-    .art-styles li {
-        width: 100%;
-        text-align: center;
+    .info{
         display: flex;
         flex-direction: column;
+
+    }
+    
+    .art-styles li a{
+        width: 100%;
+        text-align: center;
+
     }
 }
 main {
@@ -138,39 +145,44 @@ main {
 .info{
     display: flex;
     justify-content: center;
-    font-size: 23px;
+    font-size: 1.7em;
 }  
 .art-styles{
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    gap: 20px;
+    padding: 1rem;
+    margin: 2rem;
     font-size: 25x; 
 }
 .art-styles li {
     flex: 1;
-    margin: 10px 0;
+    margin: 5px 5px;
     text-align: center;
-    padding: 0px;
-    box-sizing: border-box;
+
+    
 }
 .art-styles li a {
     display: inline-block;
-    padding: 10px 40px;
+    padding: 10px 20px;
     margin: 5px;
     background-color: #474040 ;
-    color: #fff;
+    color: #edeaea;
     text-decoration: none;
-    border-radius: 20px 20px;
+    border-radius: 20px;
     transition: background-color 0.3s, transform 0.3s;
 }
 .art-styles li a:hover {
     background-color: red; 
     transform: scale(1.1);
 }
+@media (max-width:1800px) {
+ 
+    
+
+}
+
 .header-portafolio{
     text-align: center; 
     padding: 20px; 
