@@ -10,6 +10,7 @@ body {
     color: #ffffff;
     background-color: #191819;
     margin: 0;
+    height: 100vh;
 }
 .header {
     text-align: center;
@@ -54,24 +55,46 @@ header img{
     height: auto;
     color: #fff;
     margin-top: -3px;
-}
-@media (max-width: 480px) {
+} 
+@media (width < 480px) {
     .navbar {
-        padding: 10px;   
+        padding: 0px;   
     }
-    .social-media li {
-        margin: 10px; 
+    .social-media li { 
+        font-size: 1.3rem;
     }
     .social-media a:hover {
         transform: scale(1.1);
     }
+    .social-media img{
+        max-width: 14%;
+        height: auto;
+    }
+    
     .menu-toggle {
         display: none;
     }
     .info{
         display: flex;
         flex-direction: column;
+
     }
+    .art-styles{
+        font-size: 0.68em;
+        
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+   .main-logo{
+    max-width: 70%;
+    height: auto;
+   }
+   
 }   
 .menu-toggle {
     display: none;
@@ -81,7 +104,7 @@ header img{
     z-index: 1000;
 }
 
-@media (max-width: 768px) { 
+@media (width <= 768px ) { 
     .social-media {
         display: none;
         width: 100%;
@@ -160,11 +183,10 @@ main {
     flex: 1;
     margin: 5px 5px;
     text-align: center;
-
-    
+    width: 100%;
 }
 .art-styles li a {
-    display: inline-block;
+    display: block;
     padding: 10px 20px;
     margin: 5px;
     background-color: #474040 ;
@@ -177,10 +199,16 @@ main {
     background-color: red; 
     transform: scale(1.1);
 }
-@media (max-width:1800px) {
- 
+@media (width >= 770px) and (width < 1380px) {
+    .art-styles { 
+        flex-direction: row;
+        justify-content: space-between; 
+    } 
+    .art-styles li { 
+        width: 28%;
+        
+    }
     
-
 }
 
 .header-portafolio{
@@ -296,7 +324,7 @@ footer{
     display: block;
     justify-content: center;
     text-align: center;
-    padding: 30px;
+    /* padding: 30px; */
     font-family: Arial, sans-serif; 
 }
 footer p a{
