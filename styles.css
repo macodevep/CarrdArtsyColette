@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     color: #ffffff;
     background-color: #191819;
+    margin: 0;
 }
 .header {
     text-align: center;
@@ -292,17 +293,24 @@ main {
     font-size: 6em;
     color: #F5F5DC;
 }
+
 .tos-header img{
     width: 100%;
     height: auto;
+    
 }
 .sections{
-    padding: 2em;
+    padding: 1.5em;
     text-align:justify;   
     color: #D3D3D3;
-    font-size: 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
 }
-@media (max-width: 768px){
+.sections-options{
+    margin-top: 1em;
+}
+
+@media (width >= 768px ) and (width < 1380px){
     .tos-header h2{
         font-size: 4em;
       }
@@ -311,7 +319,7 @@ main {
     }
 
 }
-@media (max-width: 450px){
+@media (width <= 450px ){
     .tos-header h2{
       font-size: 1.5em;
     }
